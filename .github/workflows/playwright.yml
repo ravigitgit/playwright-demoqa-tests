@@ -30,7 +30,7 @@ jobs:
 
       - name: 🧪 Generate Allure Report
         run: |
-          npx allure generate --clean
+          npm run allure:report
         continue-on-error: true  # so build doesn't fail if tests fail
 
       - name: 📤 Upload Allure Report as Artifact
